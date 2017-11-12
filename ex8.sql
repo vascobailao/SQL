@@ -1,0 +1,1 @@
+Select sum(maxl),L.conc from TabFac T, DimLoc L, DimDate D where L.localid=T.localid  and T.dateid=D.dateid and D.dia=2 group by L.conc WITH rollup;
